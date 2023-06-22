@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+    /*Estamos poniendole un orden a la página web en general*/
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-color:#bdffd0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* "Max-width" es para que el ancho de la pagina no se salga del margen establecido. El contenido de la 
+    pagina se queda en el centro cuando pase de los 1100px.*/  
+    /* "Margin" aqui se configura el margen del "container" y ponemos "auto" para que se establezca por la derecha y la izquierda. */
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.7)
+    /* Con esto lo que obtenemos es la imagen se oscureza.*/
+    ),
+    url(../images/katherine_johnson.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    /* "vh" es un tipo de altura definida */
+    /*"Cover" para cubrir todo el ancho de la página.*/
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* "justify-content" se utiliza para alinear y distribuir el contenido de un contenedor en el eje principal. */
+    /* "space-between" se utiliza para distribuir el espacio disponible de manera uniforme entre los elementos. */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+   font-size: 22px;
+   padding: 20px;
+   color: #ffa692;
+   display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #bdffd0;
+    /* Con esto hacemos que al seleccionar las opciones del navegador cambie de color */
+}
+
+.header-content {
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 100px;
+    color:white;
+}
+
+    /* Estilos generales del footer */
+footer {
+    background-color: #fda3e2;
+    padding: 20px 0;
+    text-align: center;
+    color: #44104e;
+  }
+  
+.footer p {
+    margin: 0;
+  }
+  
+    /* Estilos para la sección de enlaces del footer */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+    /*"Inline-block" se utiliza para hacer que un elemento se comporte como un bloque en línea.*/
+  }
+  
+.footer ul li a:hover {
+    color: #44104e;
+  }
+    /* Con esto hacemos que al seleccionar las opciones del navegador cambie de color */
+
+
+h2{
+    color: #ffa692;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 35px;
+}
+
+.achievement-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.achievement20{
+    padding: 25px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement20 img{
+    width: 170px;
+    margin: -120px  30px 0;
+    height: auto;
+}
+
+.achievement20 h3{
+    color: #ffa692;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 25px;
+    /*"margin-bottom" sirve para dejar un espacio hacia abajo.*/
+}
+
+.achievement21{
+    padding: 25px 65px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.achievement21 img{
+    width: 170px;
+    height: auto;
+    margin: -120px  30px 0;
+}
+
+.achievement21 h3{
+    color: #ffa692;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 25px;
+    /* "margin-bottom" sirve para dejar un espacio hacia abajo.
+    "line-height" establece la altura de linea del texto dentro del elemento.*/
+
+}
+
+.bg-20{
+    background-image: url(../images/ffea8f.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%; 
+    height: 400%; 
+    /*"bg-20" es el codigo de la imagen
+    Con el "cover" se ajusta el tamaño de la imagen de fondo*/
+    /*"width" ancho*/
+    /*"height" alto*/
+}
+
+.bg-30{
+    background-image: url(../images/abf0ff.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 400%;
+    /*"bg-30" es el codigo de la imagen
+    Con el "cover" se ajusta el tamaño de la imagen de fondo*/
+}
+
+.general{
+    padding: 100px 0;
+    display: flex;
+    /*Se utiliza para establecerlo como un contenedor flexible. Permite controlar la disposición y el 
+    posicionamiento de los elementos internos.*/
+}
+
+.general-img{
+    width: 50%;
+    text-align: center;
+}
+
+.general-img img{
+    width: 500px;
+    /*Se establece a los elementos dentro de la clase img*/
+}
+
+.general-txt{
+    width: 50%;
+}
+
+.general-txt p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Margen inferior.*/
+}
+
+.banner{
+    padding: 150px 0;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),
+    url(../images/EstatuaKatherin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Con "background-attachment" obtenemos que se la imagen se quede "estática" y parezca que está en movimiento.*/
+}
+
+h5{
+    font-size: 50px;
+    color: whitesmoke;
+    margin-bottom: 50px;
+    font-family: fantasy, cursive;
+    /*Margen inferior.*/
+}
+
+.video{
+    padding: 100px 0;
+    display: flex;
+    /*Se utiliza para establecerlo como un contenedor flexible. Permite controlar la disposición y el 
+    posicionamiento de los elementos internos.*/
+}
+
+.video1{
+    width: 50%;
+    text-align: center;
+    /*Establece el ancho del elemento para que sea igual al 50% del ancho disponible en su contenedor 
+    haciendo que se ajuste horizontalmente.*/
+}
+
+.video2{
+    width: 50%;
+    text-align: center;
+    /*Establece el ancho del elemento para que sea igual al 50% del ancho disponible en su contenedor
+    haciendo que se ajuste horizontalmente.*/
+}
+
+.footer{
+    padding: 250px 0 50px 0;
+    /* En el "padding: 250px 0 50px 0", 250px se usa para colocarlo hacia arriba, el siguiente 0 dice 
+    que se coloca hacia la derecha. 50px hacia abajo y 0 a la izquierda*/
+}
+
+.footer-container p{
+    text-align: center;
+    font-size: 18px;
+    /*Aplica el estilo sobre los párrafos */
+}
+
+.footer-container a{
+    text-align: center;
+    font-size: 25px;
+    color: #159e3c;
+    /*Modifica el enlace.*/
+}
+
+.footer-container a:hover{
+    color: #d45e44;
+    /*"hover" sirve para cambiar de color el elemento cuando nos colocamos sobre el enlace.*/
+}
+
+@media(max-width:990px){
+        /*Indica el comienzo de una regla que se aplica cuando el ancho de la ventana del navegador es igual o menor que 990px.*/
+
+    .menu{
+        padding: 20px;
+        /*Espacio establecido entre el elemento y el borde.*/
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /*"position" Establece la posición del elemento de forma absoluta para que tenga una posición no estática. 
+        "top" coloca el elemento justo debajo.
+        "left:0" y "right:0" establecen los bordes izquierdo y derecho del .navbar.*/
+    }
+
+    .header{
+        min-height: 0vh;
+        /*Al poner esto, significa que no va a tener una altura definida*/
+    }
+
+    .header-content{
+        padding: 100px 30px;
+        /*100 de arriba y abajo y 30 de derecha e izquierda*/
+    }
+
+    .header-txt h1{
+        font-size: 80px;
+        line-height: 80px;
+        /*"line-height" se utiliza para especificar la altura de la linea de texto.*/
+    }
+    
+    .general{
+        padding: 30px;
+        flex-direction: column;
+        /*"padding" establece el espacio entre el contenido del elemento y su borde.
+        30px en todos los lados del elemento.
+        "flex-direction" establece la dirección de los elementos de este contenedor.*/
+    }
+
+    .general-img{
+        width: 100%;
+        order: 2;
+        /*"width" establece el ancho del elemento, por lo que hará que el elemento se extienda horizontalmente para ocupar todo el ancho.
+        "order:2" controla el orden de las imagenes.*/
+    }
+
+    .general-img img{
+        width: 100%;
+        /*"width" establece el ancho del elemento, por lo que hará que el elemento se extienda horizontalmente para ocupar todo el ancho.*/
+    }
+
+    .general-txt{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+        /*"width" establece el ancho del elemento, por lo que hará que el elemento se extienda horizontalmente para ocupar todo el ancho.
+        Con "text-align" se alinea el texto en el centro.
+        "Margin-bottom" estable un margen inferior de 25px. */
+    }
+
+    .general-txt p{
+        margin-bottom: 25px;
+        /*"margin-bottom" especifica la cantidad de espacio vertical que se agrega debajo de cada parrafo*/
+    }
+
+    .banner{
+        padding: 30px;
+        /*"padding" establece el espacio entre el contenido del elemento y su borde.
+        30px en todos los lados del elemento.*/
+    }
+
+    .video{
+        padding: 30px;
+        flex-direction: column;
+        /*"flex-direction" establece la dirección de los elementos de este contenedor.
+        30px en todos los lados del elemento.*/
+    }
+
+    .video1{
+        padding: 25px 100px;
+        /*"padding" establece el espacio entre el contenido del elemento y su borde.
+        25px relleno parte superior e inferior.
+        100px relleno izquierdo y derecho.*/
+    }
+
+    .video2{
+        padding: 25px 100px;
+        /*"padding" establece el espacio entre el contenido del elemento y su borde.
+        25px relleno parte superior e inferior.
+        100px relleno izquierdo y derecho.*/
+    }
+
+    .footer{
+        padding: 30px;
+        /*"padding" establece el espacio entre el contenido del elemento y su borde.
+        30px en todos los lados del elemento.*/
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        /*"flex-direction" establece la dirección de los elementos de este contenedor.
+        "text-align" alinea el texto dentro del contenedor en el centro.*/
+    }
+
+    .footer-container a{
+        margin-bottom: 40px;
+        /*"Margin-bottom" nos especifica el espacio vertical que ebe dejar entre cada enlace.*/
+    }
+}
